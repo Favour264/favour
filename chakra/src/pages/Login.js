@@ -5,6 +5,7 @@ import { faFacebookF, faApple, faGoogle } from "@fortawesome/free-brands-svg-ico
 import pic from '../Images/rocket.png';
 import {useState} from 'react'
 import axios from 'axios'
+import { BASE_URL } from '../constants';
 
    export default function Login(){
 
@@ -17,7 +18,7 @@ import axios from 'axios'
 
             alert(" Your request has be submitted")
 
-          await axios.post("http://localhost:4000/",{
+          await axios.post(BASE_URL,{
             msg
           })
 
