@@ -1,1 +1,1 @@
-export const BASE_URL = process?.env?.NODE_ENV === 'development' ? "http://localhost:4000/" : "https://favour-backend.onrender.com"
+export const BASE_URL = "https://favour-backend.onrender.com" //"http://localhost:4000/"
