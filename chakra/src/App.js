@@ -11,7 +11,7 @@ import RequestD3 from './pages/RequestD3'
 
 const App = () => {
   return (
-      <Routes>import
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
