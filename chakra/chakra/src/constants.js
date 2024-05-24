@@ -1,1 +1,0 @@
-export const BASE_URL = "https://favour-backend.onrender.com" //"http://localhost:4000/"
