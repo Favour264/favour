@@ -11,12 +11,30 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 
 const Main = () => {
+
+    const [showNavbar, setShowNavbar] = useState(true);
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+
+  const toggleNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
     return(
-       <>
+        <>
+    {isMobile && (
+        <IconButton
+            aria-label={showNavbar ? "Close Navigation" : "Open Navigation"}
+            icon={showNavbar ? <CloseIcon /> : <HamburgerIcon />}
+            onClick={toggleNavbar}
+            position="fixed"
+            top="10px"
+            right="20px"
+            zIndex="999"
+        />
+    )}
 
     <Box position="relative" width={{ base: '100%', md: '100%', lg: '100%' }} height="100%" fontSize={{ base: '15px', md: '20px', lg: '20px' }}>
         <Box position="absolute" top="0" left="0" right="0" zIndex="1">
-            <NavBar />
+            {showNavbar && <NavBar />}
         </Box>
         <Image src={pic} alt="image" w="100%" h="100%" objectFit="cover" filter='brightness(50%)' />
         <Center position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" textAlign="center" color="white">

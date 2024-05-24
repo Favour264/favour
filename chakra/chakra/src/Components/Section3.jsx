@@ -18,8 +18,8 @@ const Section3 = () =>{
                 world
             </Text>
             <Box ml="70px" pt='60px'>
-            <Flex  direction={{base:'column', lg:'row'}} justify="space-around" >
-            <Card maxW='350px'  mb={{base:'20px', lg:'0px'}} boxShadow="4px 4px 10px rgba(0, 0, 0, 0.5)" >
+            <Flex justify="space-around" a>
+            <Card maxW='350px' boxShadow="4px 4px 10px rgba(0, 0, 0, 0.5)" >
   <CardBody>
     <Image
       filter='brightness(90%)'
@@ -44,7 +44,7 @@ const Section3 = () =>{
     </Stack>
   </CardBody>
   </Card>
-  <Card maxW='350px' mb={{base:'20px', lg:'0px'}} boxShadow="4px 4px 10px rgba(0, 0, 0, 0.5)">
+  <Card maxW='350px' boxShadow="4px 4px 10px rgba(0, 0, 0, 0.5)">
   <CardBody>
     <Image
       filter='brightness(90%)'
@@ -69,7 +69,7 @@ const Section3 = () =>{
     </Stack>
   </CardBody>
   </Card>
-  <Card maxW='350px' mb={{base:'20px', lg:'0px'}} boxShadow="4px 4px 10px rgba(0, 0, 0, 0.5)">
+  <Card maxW='350px'  boxShadow="4px 4px 10px rgba(0, 0, 0, 0.5)">
   <CardBody>
     <Image
       filter='brightness(90%)'

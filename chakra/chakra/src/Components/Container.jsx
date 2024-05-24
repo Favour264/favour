@@ -6,7 +6,7 @@ const Container = () => {
     return (
         <Box className="container">
             <Heading as="h1" fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} textAlign="center">WE Cover Everything<br />Logistics</Heading>
-            <Grid templateColumns="repeat(2, 1fr)" gridTemplateColumns={{base:'1fr'}} gap={4} justifyContent="center">
+            <Grid templateColumns="repeat(2, 1fr)" gap={4} justifyContent="center">
                 <Box className="Box1" p="4" textAlign="center">
                     <FontAwesomeIcon icon={faBoxOpen} className="light-icon" />
                     <Heading as="h2" size="md">Parcel Delivery</Heading>
