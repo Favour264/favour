@@ -1,6 +1,5 @@
 {
   "name": "chakra",
-<<<<<<< HEAD
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -54,24 +53,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-=======
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mongoose": "^8.3.5",
-    "node": "^20.13.1",
-    "nodemon": "^3.1.0"
->>>>>>> e57c6b3c68926726c0922ad55b9583e9f5aa994a
   }
 }
