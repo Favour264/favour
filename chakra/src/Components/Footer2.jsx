@@ -7,10 +7,10 @@ import { Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box maxWidth={{sm:'100%' ,lg:"100%"}} bg="#020231" height={{ sm:"400px" ,lg:"200px"}} mt={{sm:'400px' ,lg:'90px'}}>
-      <Box ml="40px" pl="50px" maxWidth="90%" height="120px" borderBottom="2px solid white">
+    <Box maxWidth={{sm:'100%' ,lg:"100%"}} bg="#020231" height={{ sm:"200px" ,lg:"200px"}} mt={{sm:'700px' ,lg:'90px'}}>
+      <Box ml="40px" pl="50px" maxWidth="90%" height={{sm:"100px" ,lg:"120px"}} borderBottom="2px solid white">
         <Flex flexDirection={{base:'column' ,lg:'row'}}>
-        <Flex flexDirection="column" paddingRight="200px">
+        <Flex flexDirection="column" paddingRight={{sm:"120px" ,lg:"200px"}}>
           <Heading as="h3" size="small" pt="20px" color="white">
             LogiHub
           </Heading>
@@ -29,7 +29,7 @@ const Footer = () => {
             />
           </Flex>
         </Flex>
-        <Flex flexDirection="column" paddingRight="190px">
+        <Flex flexDirection="column" paddingRight={{sm:"120" ,lg:"190px"}}>
         <Heading as="h6" size="small" pt="20px" color="white">
             Company
           </Heading>
@@ -37,7 +37,7 @@ const Footer = () => {
                 contact us
             </Text>
             </Flex>
-            <Flex flexDirection="column" paddingRight="190px">
+            <Flex flexDirection="column" paddingRight={{sm:"120" ,lg:"190px"}}>
         <Heading as="h6" size="small" pt="20px" color="white">
             Legal
           </Heading>

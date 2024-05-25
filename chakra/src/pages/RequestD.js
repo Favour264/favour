@@ -30,7 +30,7 @@ const RegisterD = () => {
         />
       )}
       {showNavbar && <NavBar />}
-      <Heading as='h6' mt='30px' ml={{ base: '70px', md: '190px', lg: '450px' }} alignItems={{ base: 'center', md: 'center', lg: 'center' }}>
+      <Heading as='h6' mt='30px' ml={{ base: '30px', md: '190px', lg: '450px' }} alignItems={{ base: 'center', md: 'center', lg: 'center' }}>
         Request Parcel Delivery
       </Heading>
       <Flex ml={{ base: '60px', md: '35px', lg: '50px' }} justifyContent='center' direction='row'>
@@ -67,8 +67,8 @@ const RegisterD = () => {
     alignItems: 'center', 
     justifyContent: 'center', 
     fontSize: '40px', 
-    marginRight: '70px', 
-    marginLeft: '60px' ,
+    marginRight: '20px', 
+    marginLeft: '20px' ,
     color: 'white' 
   }}
 >
@@ -87,7 +87,7 @@ const RegisterD = () => {
     alignItems: 'center', 
     justifyContent: 'center', 
     fontSize: '40px', 
-    marginRight: '70px', 
+    marginRight: '40px', 
     color: 'white' 
   }}
 >
@@ -103,44 +103,44 @@ const RegisterD = () => {
             <Heading>PickUp Details</Heading>
             <FormControl isRequired mt='20px'>
               <FormLabel>Customer's name</FormLabel>
-              <Input placeholder='First name' width={{base:'450px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
+              <Input placeholder='First name' width={{base:'280px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Email</FormLabel>
-              <Input placeholder='Email' width={{base:'450px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
+              <Input placeholder='Email' width={{base:'280px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Pickup Phone Number</FormLabel>
               <InputGroup>
                 <InputLeftAddon>+234</InputLeftAddon>
-                <Input type='tel' placeholder='Phone number' width={{base:'380px' ,lg:'480px'}} height="40px" style={{ backgroundColor: '#E6E6FA' }} />
+                <Input type='tel' placeholder='Phone number' width={{base:'320px' ,lg:'480px'}} height="40px" style={{ backgroundColor: '#E6E6FA' }} />
               </InputGroup>
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Pickup Address</FormLabel>
-              <Input placeholder='Address' width={{base:'450px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
+              <Input placeholder='Address' width={{base:'280px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Category</FormLabel>
-              <Input placeholder='Category' width={{base:'450px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
+              <Input placeholder='Category' width={{base:'280px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
             </FormControl>
           </Box>
           <Box flex='none' width={{ base: 'full', md: '50%' }} mt={{ base: '20px', md: '0' }}>
             <Heading fontSize={{ base: 'xl', md: '2xl' }}>PickUp Details</Heading>
             <FormControl isRequired mt='20px'>
               <FormLabel>Recipient Name</FormLabel>
-              <Input placeholder='Recipient name' width={{base:'450px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
+              <Input placeholder='Recipient name' width={{base:'280px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Pickup Phone Number</FormLabel>
               <InputGroup>
                 <InputLeftAddon>+234</InputLeftAddon>
-                <Input type='tel' placeholder='Phone number' width={{base:'420px' ,lg:'480px'}} height="40px" style={{ backgroundColor: '#E6E6FA' }} />
+                <Input type='tel' placeholder='Phone number' width={{base:'320px' ,lg:'480px'}} height="40px" style={{ backgroundColor: '#E6E6FA' }} />
               </InputGroup>
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Pickup Address</FormLabel>
-              <Input placeholder='Address' width={{base:'450px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
+              <Input placeholder='Address' width={{base:'280px' ,lg:'550px'}} mt='10px' height="50px" style={{ backgroundColor: '#E6E6FA' }} />
             </FormControl>
             <FormControl isRequired mt='20px'>
               <FormLabel>Pickup Time</FormLabel>
@@ -155,7 +155,7 @@ const RegisterD = () => {
           </Box>
         </Flex>
       </Box>
-      <Button colorScheme='blue' size='small' p='5' width={{ base: '150px', lg: '200px' }} h='8' mt='30px' ml={{ base: '155px', md: '600px' }} borderRadius='20'><Link to='/RequestD2'>Proceed</Link></Button>
+      <Button colorScheme='blue' size='small' p='5' width={{ base: '150px', lg: '200px' }} h='8' mt='30px' ml={{ base: '85px', md: '600px' }} borderRadius='20'><Link to='/RequestD2'>Proceed</Link></Button>
       <Footer />
     </Box>
   );

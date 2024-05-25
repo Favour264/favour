@@ -83,8 +83,8 @@ const RequestD3 = () => {
     alignItems: 'center', 
     justifyContent: 'center', 
     fontSize: '40px', 
-    marginRight: '70px', 
-    marginLeft: '60px' ,
+    marginRight: '20px', 
+    marginLeft: '20px' ,
     color: 'white' 
   }}
 >
@@ -103,7 +103,7 @@ const RequestD3 = () => {
     alignItems: 'center', 
     justifyContent: 'center', 
     fontSize: '40px', 
-    marginRight: '70px', 
+    marginRight: '40px', 
     color: 'white' 
   }}
 >

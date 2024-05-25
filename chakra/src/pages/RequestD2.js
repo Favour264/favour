@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Box, Heading, ListItem, Flex, List, Text, Divider,IconButton, useMediaQuery } from '@chakra-ui/react';
-import Footer2 from '../Components/Footer2';
+import Footer from '../Components/Footer2';
 import { Icon, Button } from '@chakra-ui/react';
 import { FaCreditCard, FaUniversity, FaMoneyBill } from 'react-icons/fa';
 import NavBar from '../Components/Navbar3';
@@ -17,6 +17,7 @@ const RequestD2 = () => {
   };
 
   return (
+    <Box>
     <Box>
       {isMobile && (
         <IconButton
@@ -67,8 +68,8 @@ const RequestD2 = () => {
     alignItems: 'center', 
     justifyContent: 'center', 
     fontSize: '40px', 
-    marginRight: '70px', 
-    marginLeft: '60px' ,
+    marginRight: '20px', 
+    marginLeft: '20px' ,
     color: 'white' 
   }}
 >
@@ -87,7 +88,7 @@ const RequestD2 = () => {
     alignItems: 'center', 
     justifyContent: 'center', 
     fontSize: '40px', 
-    marginRight: '70px', 
+    marginRight: '40px', 
     color: 'white' 
   }}
 >
@@ -97,18 +98,18 @@ const RequestD2 = () => {
           </Flex>
         </List>
       </Flex>
-      <Box width='550px' ml={{sm:'10px' ,lg:'60px'}} mt='60px' height='650px' color='grey'>
+      <Box width={{sm:'250px' ,lg:'550px'}} ml={{sm:'10px' ,lg:'60px'}} mt='60px' height='650px' color='grey'>
         <Flex direction={{base:'column', lg:'row'}}>
 
           <Box>
-            <Box width='370px' ml={{sm:'10px' ,lg:'60px'}} height='35px' bgColor='#E6E6FA'>
+            <Box width={{sm:'150px' ,lg:'370px'}} ml={{sm:'10px' ,lg:'60px'}} height='35px' bgColor='#E6E6FA'>
               <Text alignItems='Center' fontSize='lg' ml='10px'>
                 Magic Land,No.1,Market Avenue,Kuje,Abuja
               </Text>
             </Box>
-            <Box width='370px' ml={{sm:'10px' ,lg:'60px'}} height='35px' bgColor='#E6E6FA' mt='10'>
+            <Box width={{sm:'150px' ,lg:'370px'}} ml={{sm:'10px' ,lg:'60px'}} height='35px' bgColor='#E6E6FA' mt='10'>
               <Text alignItems='Center' fontSize='lg' ml='10px'>
-                Magic Land,No.1,Market Avenue,Kuje,Abuja
+                Magic Land,No.2,Market Avenue,Kuje,Abuja
               </Text>
             </Box>
             <Flex align="center" justify="space-between">
@@ -178,12 +179,12 @@ const RequestD2 = () => {
             </Flex>
             <Divider width={{base:'450px' , lg:'430px'}} border='1.5px solid grey' mt='30px'></Divider>
           </Box>
-          <Box width='550px' height='650px' ml={{sm:'40px' ,lg:'200px'}} flex='none'>
+          <Box width='550px' height='650px' ml={{sm:'40px' ,lg:'200px'}} mt={{sm:'20px' ,lg:'200px'}} flex='none'>
             <Text as='h4' fontSize='lg' color='#020231'>
               Payment Method
             </Text>
             <Divider width={{base:'420px' , lg:'430px'}} border='1.5px solid grey' mt='30px'></Divider>
-            <Box width={{sm:'420px' ,lg:'550px'}} height='45px' mt='30px' border='1px solid lightgrey' borderRadius='5px'>
+            <Box width={{sm:'420px' ,lg:'550px'}} height={{sm:'30px' ,lg:'45px'}} mt={{sm:'0px' ,lg:'30px'}} border='1px solid lightgrey' borderRadius='5px'>
               <Flex>
                 <Icon as={FaCreditCard} boxSize={10} ml={{sm:'90px' ,lg:'130px'}} />
                 <Text ml={{sm:'30px' ,lg:'70px'}} fontSize='2xl'>Card Payment</Text>
@@ -208,7 +209,8 @@ const RequestD2 = () => {
           </Box>
         </Flex>
       </Box>
-      <Footer2 />
+    </Box>
+    <Footer/>
     </Box>
   );
 };
