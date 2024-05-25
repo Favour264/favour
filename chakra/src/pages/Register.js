@@ -11,7 +11,7 @@ const Register = () => {
   return (
     <Box>
       <Flex direction={{base:'column', lg:'row'}}>
-        <Box width={{base:'430px' , lg:'700px'}} height='700px' backgroundColor='yellow'>
+        <Box width={{base:'430px' , lg:'700px'}} height='700px' backgroundColor='white'>
         <NavBar/>
         <Heading as='h1' ml={{ base:'75px',lg:'160px'}} mt={{base:'90px',lg:'170px'}}>
           Sign up as a customer
