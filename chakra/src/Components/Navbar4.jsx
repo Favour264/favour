@@ -14,7 +14,7 @@ const NavBar4 = () => {
         <ListItem ml='20px'>
           <Link to="/about">About</Link>
         </ListItem>
-        <ListItem pl={{base:'130px' ,lg:'320px'}}>
+        <ListItem pl={{base:'100px' ,lg:'320px'}}>
           <Link to="/login">Login</Link>
         </ListItem>
         <ListItem>

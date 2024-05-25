@@ -14,7 +14,7 @@ const NavBar = () => {
           </Heading>
         </Box>
         <List display="flex" gap='20px' justifyContent="space-around">
-          <ListItem ml={{sm:'80px', lg:'180px'}}>
+          <ListItem ml={{base:'60px', lg:'180px'}}>
             <Link to="/">Home</Link>
           </ListItem>
           <ListItem ml={{base:'60px', lg:'120px'}}>
