@@ -21,7 +21,7 @@ const Main = () => {
         <Image src={pic} alt="image" w="100%" h="100%" objectFit="cover" filter='brightness(50%)' />
         <Center position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" textAlign="center" color="white">
             <Box mt={{ base: '20px', md: '40px', lg: '50px' }}>
-                <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}>The one stop-hub for<br></br>everything logistics</Heading>
+                <Heading fontSize={{ base: 'xl', md: '3xl', lg: '4xl' }}>The one stop-hub for<br></br>everything logistics</Heading>
                 <Text pt="5px">Best prices. Seamless experience. Multiple service options.</Text>
                 <Button colorScheme='blue' borderRadius='20px' size='small' p={{ base: '4px', md: '4px', lg: '6px' }} h='8' ml='40px' mt='5px'>
                     <Link to="/RequestD">Send Delivery Request Now</Link>

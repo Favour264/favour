@@ -7,9 +7,9 @@ import { Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box maxWidth="100%" bg="#020231" height="200px" mt='90px'>
+    <Box maxWidth={{sm:'100%' ,lg:"100%"}} bg="#020231" height={{ sm:"400px" ,lg:"200px"}} mt={{sm:'400px' ,lg:'90px'}}>
       <Box ml="40px" pl="50px" maxWidth="90%" height="120px" borderBottom="2px solid white">
-        <Flex flexDirection="row">
+        <Flex flexDirection={{base:'column' ,lg:'row'}}>
         <Flex flexDirection="column" paddingRight="200px">
           <Heading as="h3" size="small" pt="20px" color="white">
             LogiHub
@@ -56,7 +56,7 @@ const Footer = () => {
             </Flex>
         </Flex>
       </Box>
-      <Text fontSize='small' pt='0px' color="white" mt="20px" ml="40px">
+      <Text fontSize='small' pt='0px' color="white" mt={{ sm:"220px" ,lg:"20px"}} ml="40px">
                 Copyright@2024LogiHub.All rights reserved.
             </Text>
     </Box>

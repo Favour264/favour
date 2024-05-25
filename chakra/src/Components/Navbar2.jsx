@@ -14,10 +14,10 @@ const NavBar = () => {
           </Heading>
         </Box>
         <List display="flex" gap='20px' justifyContent="space-around">
-          <ListItem ml='180px'>
+          <ListItem ml={{sm:'80px', lg:'180px'}}>
             <Link to="/">Home</Link>
           </ListItem>
-          <ListItem ml='120px'>
+          <ListItem ml={{base:'60px', lg:'120px'}}>
             <Link to="/register">Become a Vendor</Link>
           </ListItem>
         </List>

@@ -46,28 +46,79 @@ const RequestD3 = () => {
     <Box>
       <NavBar />
 
-      <Heading mt='30px' ml='500px' color='#020231'>
+      <Heading as='h6' mt='30px' ml={{ base: '70px', md: '190px', lg: '450px' }} alignItems={{ base: 'center', md: 'center', lg: 'center' }}>
         Request Parcel Delivery
       </Heading>
-
-      <Flex ml='50px' justifyContent='center' direction='row'>
-        <List style={{ listStyleType: 'none', padding: 5 }}>
+      <Flex ml={{ base: '60px', md: '35px', lg: '50px' }} justifyContent='center' direction='row'>
+        <List style={{ listStyleType: 'none' }}>
           <Flex mt='40px'>
-            <ListItem style={{ backgroundColor: '#0077B6', color: 'white', width: '90px', height: '90px', padding: '0.6em', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontColor: 'white', fontSize: '40px', marginRight: '70px' }}>1</ListItem>
-            <hr style={{ margin: '0 auto', border: 'none', borderBottom: '2px solid black', alignItems: 'center', width: '360px', marginTop: '110px' }} />
-            <ListItem style={{ backgroundColor: '#0077B6', width: '90px', color: 'white', height: '90px', padding: '0.6em', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '40px', marginRight: '70px' }}>2</ListItem>
-            <hr style={{ margin: '0 auto', border: 'none', borderBottom: '2px solid black', alignItems: 'center', width: '360px', marginTop: '110px' }} />
-            <ListItem style={{ backgroundColor: '#E6E6FA', width: '90px', color: '#0077B6', height: '90px', padding: '0.6em', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '40px', margin: '5px' }}>3</ListItem>
+          <ListItem 
+  style={{ 
+    backgroundColor: '#0077B6', 
+    width: { sm: '30px', lg: '90px' }, 
+    height: '90px', 
+    padding: '0.6em', 
+    borderRadius: '50%', 
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    fontSize: '40px', 
+    marginRight: { sm:'50px',lg:'70px'}, 
+    color: 'white' 
+  }}
+>
+
+  1
+</ListItem>
+
+           
+            <ListItem 
+  style={{ 
+    backgroundColor: '#0077B6', 
+    width: { sm: '30px', lg: '90px' },
+    height: '90px', 
+    padding: '0.6em', 
+    borderRadius: '50%', 
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    fontSize: '40px', 
+    marginRight: '70px', 
+    marginLeft: '60px' ,
+    color: 'white' 
+  }}
+>
+  2
+</ListItem>
+
+           
+            <ListItem 
+  style={{ 
+    backgroundColor: '#0077B6', 
+    width: { sm: '30px', lg: '90px' }, 
+    height: '90px',  
+    padding: '0.6em', 
+    borderRadius: '50%', 
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    fontSize: '40px', 
+    marginRight: '70px', 
+    color: 'white' 
+  }}
+>
+  3
+</ListItem>
+
           </Flex>
         </List>
       </Flex>
-
-      <Box width='370px' ml='60px' height='35px' bgColor='lightgrey' mt='30px'>
+      <Box width='370px' ml={{ sm:'10px' ,lg:'60px'}} height='35px' bgColor='lightgrey' mt='30px'>
         <Text alignItems='Center' fontSize='lg' ml='10px'>
           Magic Land, No.1, Market Avenue, Kuje
         </Text>
       </Box>
-      <Box width='370px' ml='60px' height='35px' bgColor='lightgrey' mt='10'>
+      <Box width='370px' ml={{ sm:'10px' ,lg:'60px'}}  height='35px' bgColor='lightgrey' mt='10'>
         <Text alignItems='Center' fontSize='lg' ml='10px'>
           Magic Land, No.1, Market Avenue, Kuje
         </Text>
