@@ -19,7 +19,7 @@ function Home() {
             <Body />
             <Container /><br></br>
             <Button className='btn' colorScheme='blue' size=',md' p='5' h='10'  mb='30px'
-                ml={{ base: '170px', md: '370px', lg: '570px' }} borderRadius='20'><Link to='/RequestD'>Request Delivery Now</Link></Button>
+                ml={{ base: '80px', md: '370px', lg: '570px' }} borderRadius='20'><Link to='/RequestD'>Request Delivery Now</Link></Button>
             <Section1 />
             <Section2 />
             <Section3 />

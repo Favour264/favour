@@ -7,10 +7,10 @@ import { Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box maxWidth="100%" bg="#020231" height={{ sm:'390px' ,lg:"200px"}}>
+    <Box maxWidth="100%" bg="#020231" height={{ base:'420px' ,lg:"200px"}}>
       <Box ml="40px" pl="50px" maxWidth="90%" height="120px" borderBottom="2px solid white">
-        <Flex flexDirection={{sm:'column', lg:'row'}} >
-        <Flex flexDirection="column" paddingRight="200px">
+        <Flex flexDirection={{base:'column',md:"row" ,lg:'row'}} >
+        <Flex flexDirection="column" paddingRight={{base:"100" ,lg:"190px"}}>
           <Heading as="h3" size="small" pt="20px" color="white">
             LogiHub
           </Heading>
@@ -29,7 +29,7 @@ const Footer = () => {
             />
           </Flex>
         </Flex>
-        <Flex flexDirection="column" paddingRight="190px">
+        <Flex flexDirection="column" paddingRight={{base:"100" ,lg:"190px"}}>
         <Heading as="h6" size="small" pt="20px" color="white">
             Company
           </Heading>
@@ -37,7 +37,7 @@ const Footer = () => {
                 contact us
             </Text>
             </Flex>
-            <Flex flexDirection="column" paddingRight="190px">
+            <Flex flexDirection="column" paddingRight={{base:"100" ,lg:"190px"}}>
         <Heading as="h6" size="small" pt="20px" color="white">
             Legal
           </Heading>
@@ -56,7 +56,7 @@ const Footer = () => {
             </Flex>
         </Flex>
       </Box>
-      <Text fontSize='small' pt='0px' color="white" mt={{base:"240px" ,lg:"20px"}} ml="40px">
+      <Text fontSize='small' pt='0px' color="white" mt={{base:"260px", md:"20px" ,lg:"20px"}} ml="40px">
                 Copyright@2024LogiHub.All rights reserved.
             </Text>
     </Box>

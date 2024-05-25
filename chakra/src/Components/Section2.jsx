@@ -9,12 +9,12 @@ const Section2 = () => {
             bg="#020231"
             maxWidth="62.5em"
             color="white"
-            height={{ base: "auto", md: "520px" }} 
+            height={{ base: "auto", md: "520px", lg:"520px" }} 
             borderRadius="20px"
             alignItems="center"
             justifyContent="center"
-            p={{ base: "20px", md: "0" }}
-            ml={{ base: "0", md: "160px" }} 
+            p={{ base: "20px", md: "0", lg:"0px" }}
+            ml={{ base: "0", md: "160px", lg:"160px" }} 
         >
             <Box
                 display="flex"
