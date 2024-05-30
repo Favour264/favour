@@ -12,36 +12,38 @@ const NavBar = () => {
 
   return (
     <>
-      <Button onClick={toggleNavbar} display={{ base: 'block', md: 'none' }}>
+      <Button onClick={toggleNavbar} colorScheme='blue' display={{ base: 'block', md: 'none' }}>
         {isOpen ? 'Close' : 'Menu'}
       </Button>
       <Flex
         as="nav"
-        align="center"
+        align=""
         justify="space-between"
-        padding={{ base: '0.5rem', lg: '1rem' }}
-        gap={{ base: '1px', lg: '30px' }}
-        color="black"
-        width={{ base: '50%', sm: '100%', md: '100%' }}
+        padding={{ base: '0.5rem', lg: '10px' }}
+        gap={{ base: '1px', lg: '80px' }}
+        color={{base:'black', md:'white', lg:'white'}}
+        width={{ base: '50%', sm: '100%', md: '100%', lg:'100%' }}
         mt={{ base: '10px', lg: '30px' }}
         display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: 'column', md: 'row', lg:'row' }}
       >
         <Box
+          backgroundColor="yellow"
           as="div"
           display="flex"
-          alignItems="center"
+          alignItems=""
           Width={{ base: '100px', md: '100%', lg: '100%' }}
         >
            
 
         </Box>
         <List
+          width={{base:'30%' , md:'60%' , lg:'100%'}}
           display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
           flexDirection={{ base: 'column', md: 'row', lg: 'row' }}
           gap='5px'
           justifyContent={{ base: 'space-between', lg: 'space-around' }}
-          bg="white" // Background color for the dropdown
+          bg={{base:'white', md:'none', lg:'none'}} // Background color for the dropdown
           p="1rem" // Padding for the dropdown
         >
           <ListItem>
@@ -64,7 +66,7 @@ const NavBar = () => {
           <ListItem>
             <Link to="/about">About</Link>
           </ListItem>
-          <ListItem pl={{ sm: '10px', lg: '350px' }}>
+          <ListItem pl={{ sm: '4px', lg: '350px' }}>
             <Link to="/login">Login</Link>
           </ListItem>
           <ListItem>
